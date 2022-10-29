@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<form action="/" method="POST">
+    <input type="text" name="'name_disclipline" placeholder="Digite o nome da disciplina: ">
+    <input type="number" name="discipline_workload_teory" placeholder="Insira a carga horária teórica: ">
+    <input type="number" name="discipline_workload_practice" placeholder="Insira a carga horária prática: ">
+    <input type="number" name="discipline_workload_online" placeholder="Insira a carga horária online:">
+    <input type="number" name=" discipline_workload_total" placeholder="Insira a carga horária total:">
+    
+
+    <button type="submit">Cadastrar</button>
+</form>
+<!-- {% for teachers in data %}
+   
+    <br>
+    {{teachers.1}}
+    {{teachers.0}}
+    <form action="/delete/teacher/{{teachers.0}}" method="POST">
+        <button>DELETAR</button>
+    </form>
+    <a href="/update/teacher/{{teachers.0}}">Atualizar</a>
+    {% else %}
+    NÃO TEM PRODUTOS CADASTRADOS
+{% endfor %} -->
+{% endblock %}

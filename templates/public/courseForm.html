@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<form action="/" method="POST">
+    <input type="text" name="'full_n_course" placeholder="Digite o nome completo do curso: ">
+    <input type="text" name="short_n_course" placeholder="Digite o nome reduzido">
+    <input type="text" name="modal_course" placeholder="Qual é a modalidade do curso?">
+    <input type="number" name="class_course" placeholder="Digite o código do curso">
+    
+
+    <button type="submit">Cadastrar</button>
+</form>
+<!-- {% for teachers in data %}
+   
+    <br>
+    {{teachers.1}}
+    {{teachers.0}}
+    <form action="/delete/teacher/{{teachers.0}}" method="POST">
+        <button>DELETAR</button>
+    </form>
+    <a href="/update/teacher/{{teachers.0}}">Atualizar</a>
+    {% else %}
+    NÃO TEM PRODUTOS CADASTRADOS
+{% endfor %} -->
+{% endblock %}

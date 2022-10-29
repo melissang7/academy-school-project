@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<form action="/" method="POST">
+    <input type="text" name="'institution_name" placeholder="Digite o nome da instituição: ">
+    <input type="text" name="headquarters" placeholder="Digite a matriz: ">
+    <input type="text" name="branch" placeholder="Insira a filial: ">
+    <input type="text" name="courses" placeholder="Insira o curso">
+    
+
+    <button type="submit">Cadastrar</button>
+</form>
+<!-- {% for teachers in data %}
+   
+    <br>
+    {{teachers.1}}
+    {{teachers.0}}
+    <form action="/delete/teacher/{{teachers.0}}" method="POST">
+        <button>DELETAR</button>
+    </form>
+    <a href="/update/teacher/{{teachers.0}}">Atualizar</a>
+    {% else %}
+    NÃO TEM PRODUTOS CADASTRADOS
+{% endfor %} -->
+{% endblock %}

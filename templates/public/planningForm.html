@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<form action="/" method="POST">
+    <input type="number" name="'semester" placeholder="Digite o semestre: ">
+    <input type="number" name="planning_class" placeholder="Digite a turma: ">
+    <input type="text" name="planning_status" placeholder="Digite o status: ">
+    <input type="number" name="planning_workload" placeholder="Digite a carga horária: ">
+    <input type="text" name="'modalit_offering" placeholder="Digite a modalidade: ">
+    <input type="text" name="planning_subject" placeholder="Digite a disciplina: ">
+    
+
+    <button type="submit">Cadastrar</button>
+</form>
+<!-- {% for teachers in data %}
+   
+    <br>
+    {{teachers.1}}
+    {{teachers.0}}
+    <form action="/delete/teacher/{{teachers.0}}" method="POST">
+        <button>DELETAR</button>
+    </form>
+    <a href="/update/teacher/{{teachers.0}}">Atualizar</a>
+    {% else %}
+    NÃO TEM PRODUTOS CADASTRADOS
+{% endfor %} -->
+{% endblock %}
